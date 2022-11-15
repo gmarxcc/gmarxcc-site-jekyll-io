@@ -28,6 +28,7 @@ twitter_username: gmarx_cc
 github_username:  gmarxcc
 
 # Build settings
+markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
@@ -55,7 +56,7 @@ collections:
 # their entries' file path in the `include:` list.
 #
 exclude:
-        - mobile-devices.md
+#   - mobile-devices.md
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/
