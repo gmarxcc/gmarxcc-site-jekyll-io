@@ -13,7 +13,7 @@ layout: lectures
 	  <!--
       <a href="{{site.baseurl}}/lectures/{{lecture.slug}}/" class="{% if page.url contains lecture.slug%}current{% endif %}"> {{lecture.title}}</a>
 	  -->
-      <a href="/lectures/{{lecture.slug}}/" class="{% if page.url contains lecture.slug%}current{% endif %}"> {{lecture.title}}</a>
+	  <a href="{{site.baseurl}}/lectures/{{lecture.slug}}/" class="{% if page.url contains lecture.slug%}current{% endif %}"> {{lecture.title}}</a>
     </li>
     {% endfor %}
   </ul>
