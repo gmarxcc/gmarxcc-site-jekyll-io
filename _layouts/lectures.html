@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<h1>Lectures</h1>
+{{content}}
+<hr>
+<strong>More information about other Lectures below:</strong>
+<nav>
+  <ul>
+    {% for lecture in site.lectures %}
+    <li>
+      <a href="{{site.baseurl}}/lectures/{{lecture.slug}}/" class="{% if page.url contains lecture.slug%}current{% endif %}"> {{lecture.title}}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>

@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<h1>Services</h1>
+{{content}}
+<hr>
+<strong>More information about services, please visit:</strong>
+<nav>
+  <ul>
+    {% for service in site.services %}
+    <li>
+      <a href="{{site.baseurl}}/services/{{service.slug}}/" class="{% if page.url contains service.slug%}current{% endif %}"> {{service.title}}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>

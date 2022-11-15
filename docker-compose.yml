@@ -1,0 +1,26 @@
+version: "3"
+
+services:
+  jekyll:
+    image: jekyll/jekyll:4.2.0
+    command: jekyll serve --watch --incremental
+    container_name: jekyll-gmarxcc
+    restart: unless-stopped
+    ports:
+      - 4000:4000
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./gmarxcc-site/:/srv/jekyll
+    networks:
+      - web
+    labels:
+      - traefik.enable=true
+      - traefik.port=4000
+      - traefik.http.routers.www.rule=Host(`www.gmarxcc.com`)
+      - traefik.http.routers.www.tls.certresolver=lets-encrypt
+      - traefik.http.routers.www.tls=true
+
+      
+networks:
+  web:
+    external: true

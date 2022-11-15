@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<h1>Workshops and Events</h1>
+{{content}}
+<hr>
+<strong>Previous workshops and events:</strong>
+<nav>
+  <ul>
+    {% for workshop in site.workshops %}
+    <li>
+      <a href="{{site.baseurl}}/workshops/{{workshop.slug}}/" class="{% if page.url contains workshop.slug%}current{% endif %}"> {{workshop.title}}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>

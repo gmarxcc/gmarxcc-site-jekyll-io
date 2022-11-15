@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<h1>Actual Projects on Development</h1>
+{{content}}
+<hr>
+<strong>More information about related projects below:</strong>
+<nav>
+  <ul>
+    {% for project in site.projects %}
+    <li>
+      <a href="{{site.baseurl}}/projects/{{project.slug}}/" class="{% if page.url contains project.slug%}current{% endif %}"> {{project.title}}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>
