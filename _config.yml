@@ -23,7 +23,7 @@ email: gmarx_cc@itmorelia.edu.mx
 description: The website for collaborative work in projects, thesis, and lectures with Gerardo Marx.  
 
 baseurl: "gmarxcc-site-jekyll-io" #"" # the subpath of your site, e.g. /blog
-url: #"www.gmarxcc.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "" #"www.gmarxcc.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: gmarx_cc
 github_username:  gmarxcc
 
