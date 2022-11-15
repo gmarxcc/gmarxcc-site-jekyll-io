@@ -1,5 +1,5 @@
 ---
-layout: "default"
+layout: "page"
 ---
 
 <h1>Lectures</h1>
@@ -10,10 +10,7 @@ layout: "default"
   <ul>
     {% for lecture in site.lectures %}
     <li>
-	  <!--
-      <a href="{{site.baseurl}}/lectures/{{lecture.slug}}/" class="{% if page.url contains lecture.slug%}current{% endif %}"> {{lecture.title}}</a>
-	  -->
-	  <a href="/lectures/{{lecture.slug}}/" class="{% if page.url contains lecture.slug%}current{% endif %}"> {{lecture.title}}</a>
+	  <a href="{{site.baseurl}}/lectures/{{lecture.slug}}/" class="{% if page.url contains lecture.slug%}current{% endif %}"> {{lecture.title}}</a>
     </li>
     {% endfor %}
   </ul>
