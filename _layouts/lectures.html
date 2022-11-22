@@ -10,7 +10,7 @@ layout: default
   <ul>
     {% for lecture in site.lectures %}
     <li>
-	  <a href="{{site.baseurl}}/lectures/{{lecture.slug}}/" class="{% if page.url contains lecture.slug%}current{% endif %}"> {{lecture.title}}</a>
+	  <a href="{{lectures.url}}"> {{lecture.title}}</a>
     </li>
     {% endfor %}
   </ul>
