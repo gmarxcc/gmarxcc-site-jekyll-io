@@ -36,16 +36,16 @@ plugins:
 collections:
   projects:
     output: true
-    permalink: /projects/:path/
+    #permalink: /projects/:path/
   lectures:
     output: true
-    permalink: /lectures/:path/
+    #permalink: /lectures/:path/
   services:
     output: true
-    permalink: /services/:path/
+    #permalink: /services/:path/
   workshops:
     output: true
-    permalink: /workshops/:path/
+    #permalink: /workshops/:path/
 
 # Exclude from processing.
 # The following items will not be processed, by default.
